@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  :root {
+    --color-primary-600: 206, 149, 86;
+    --color-gray-500: 107, 114, 128;
+  }
+}
+ 
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
