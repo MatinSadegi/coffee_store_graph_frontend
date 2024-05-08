@@ -10,10 +10,13 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "header-background": "url('/images/coffee-bg.jpg')",
+        "menu-background":
+          "linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)),url('/images/menu-bg.jpg')",
       },
       colors: {
         primary: {
           600: "rgba(var(--color-primary-600))",
+          400: "rgba(var(--color-primary-400),0.15)",
         },
         gray: {
           500: "rgba(var(--color-gray-500))",
