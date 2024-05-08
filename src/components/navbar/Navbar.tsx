@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="flex gap-5">
         <Image src={searchIcon} alt="search-icon" />
         <Image src={cartIcon} alt="cart-icon" />
-        <button className="  bg-primary-600 text-white py-2 px-6 rounded-sm">ثبت نام</button>
+        <button className=" buttons">ثبت نام</button>
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const Links = () => {
   return (
     <div className="flex gap-6">
       {links.map((link) => (
-        <Link href={link.path} className=" hover:text-primary-600 transition-all">{link.title}</Link>
+        <Link href={link.path} key={link.title} className=" hover:text-primary-600 transition-all">{link.title}</Link>
       ))}
     </div>
   );

@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/src/components/Header";
+import { VazirFont } from "../utils/fronts";
 
-const VazirFont = localFont({
-  src:'../../public/fonts/Vazir.ttf'
-})
-
+ 
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html dir="rtl" lang="fa"  >
-      <body className={`p-0 m-0 overflow-hidden ${VazirFont.className}`} >
+      <body className={`p-0 m-0  ${VazirFont.className}`} >
         <Header/>
         {children}
       </body>
