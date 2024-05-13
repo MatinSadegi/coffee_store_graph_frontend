@@ -12,6 +12,8 @@ const config: Config = {
         "header-background": "url('/images/coffee-bg.jpg')",
         "menu-background":
           "linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)),url('/images/menu-bg.jpg')",
+        "reservation-background":
+          "linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)),url('/images/reservation-bg.jpg')",
       },
       colors: {
         primary: {
@@ -20,6 +22,9 @@ const config: Config = {
         },
         gray: {
           500: "rgba(var(--color-gray-500))",
+        },
+        brown: {
+          700: "rgba(var(--color-brown-700))",
         },
       },
     },

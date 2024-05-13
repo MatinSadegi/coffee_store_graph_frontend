@@ -2,23 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
   :root {
     --color-primary-600: 206, 149, 86;
     --color-primary-400: 215, 182, 121;
     --color-gray-500: 107, 114, 128;
+    --color-brown-700: 32, 15, 5;
   }
-  h1{
-    @apply text-5xl
+  h1 {
+    @apply text-5xl;
   }
-  h2{
-    @apply text-[40px]
+  h2 {
+    @apply text-[40px];
   }
-  h4{
-    @apply text-3xl
+  h4 {
+    @apply text-3xl;
+  }
+  h5 {
+    @apply text-2xl;
   }
 }
- 
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -26,6 +30,6 @@
 }
 @layer components {
   .buttons {
-    @apply text-white bg-primary-600 rounded-sm px-5 py-2
+    @apply text-white bg-primary-600 rounded-sm px-5 py-2;
   }
 }
