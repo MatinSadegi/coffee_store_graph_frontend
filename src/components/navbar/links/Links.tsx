@@ -23,11 +23,19 @@ const links = [
 ];
 
 const Links = () => {
-    const pathName = usePathname();
+  const pathName = usePathname();
   return (
     <div className="flex gap-6">
       {links.map((link) => (
-        <Link href={link.path} key={link.title} className=" hover:text-primary-600 transition-all">{link.title}</Link>
+        <Link
+          href={link.path}
+          key={link.title}
+          className={`hover:text-primary-600 transition-all ${
+            pathName === "/" ? " text-black" : " text-white"
+          }`}
+        >
+          {link.title}
+        </Link>
       ))}
     </div>
   );

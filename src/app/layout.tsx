@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/src/components/Header";
+import Navbar from "../components/navbar/Navbar";
 import { VazirFont } from "../utils/fronts";
+import Footer from "../components/Footer";
 
  
 
@@ -18,8 +19,9 @@ export default function RootLayout({
   return (
     <html dir="rtl" lang="fa"  >
       <body className={`p-0 m-0  ${VazirFont.className}`} >
-        <Header/>
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

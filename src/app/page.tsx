@@ -5,16 +5,17 @@ import Offer from "./Offer";
 import Reservation from "./Reservation";
 import LatestNews from "./latestNews/LatestNews";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
     <main className=" mx-auto">
-        <Providing />
-        <FeaturedProduct/>
-        <Menu/>
-        <Offer/>
-        <LatestNews/>
-        <Footer/>
+      <Header />
+      <Providing />
+      <FeaturedProduct />
+      <Menu />
+      <Offer />
+      <LatestNews />
     </main>
   );
 }

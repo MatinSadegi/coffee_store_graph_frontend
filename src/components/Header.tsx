@@ -8,7 +8,6 @@ const Header = () => {
    
   return (
     <header className="  bg-header-background bg-cover h-[80vh]">
-      <Navbar />
       <div className="w-[1300px] mx-auto h-full flex flex-col justify-center">
         <h1 className={` leading-relaxed ${NastaligFont.className}`}>
           تا زمانی که <span className=' text-primary-600'>قهوه</span> در جهان وجود دارد <br />
