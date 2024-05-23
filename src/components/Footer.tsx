@@ -9,7 +9,7 @@ import { NastaligFont } from "../utils/fronts";
 const Footer = () => {
   return (
     <footer className=" w-full bg-brown-700 py-20">
-      <div className=" w-[1200px] flex justify-between mx-auto">
+      <div className=" max-w-[1200px] flex justify-between mx-auto">
         <div>
           <div className=" flex items-center">
             <Image src={logo} alt="logo" width={50} height={30} />

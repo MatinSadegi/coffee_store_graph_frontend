@@ -16,7 +16,7 @@ const Navbar = () => {
         pathName === "/" ? " bg-transparent" : " bg-brown-700"
       }`}
     >
-      <div className=" w-[1300px] flex justify-between items-center text-black mx-auto ">
+      <div className=" max-w-[1200px] flex justify-between items-center text-black mx-auto ">
         <div className="flex items-center">
           <Image src={logo} alt="logo" width={50} height={30} />
           <h3 className={`${pathName === "/" ? " text-black" : " text-white"}`}>

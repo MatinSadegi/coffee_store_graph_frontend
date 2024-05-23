@@ -5,8 +5,12 @@ import { usePathname } from "next/navigation";
 
 const links = [
   {
-    title: "فروشگاه",
+    title: "صفحه اصلی",
     path: "/",
+  },
+  {
+    title: "فروشگاه",
+    path: "/shop",
   },
   {
     title: "وبلاگ",
@@ -18,7 +22,7 @@ const links = [
   },
   {
     title: "تماس با ما",
-    path: "/",
+    path: "/contact-us",
   },
 ];
 

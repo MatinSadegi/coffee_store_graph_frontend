@@ -9,11 +9,12 @@
     --color-gray-500: 107, 114, 128;
     --color-brown-700: 32, 15, 5;
   }
+
   h1 {
     @apply text-5xl;
   }
   h2 {
-    @apply text-[40px];
+    @apply text-[40px] ;
   }
   h4 {
     @apply text-3xl;
@@ -31,5 +32,8 @@
 @layer components {
   .buttons {
     @apply text-white bg-primary-600 rounded-sm px-5 py-2;
+  }
+  .input {
+    @apply border  w-full mt-5 p-3 placeholder:text-sm outline-none border-gray-500 focus:border-primary-600
   }
 }

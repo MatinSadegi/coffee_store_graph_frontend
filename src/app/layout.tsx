@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html dir="rtl" lang="fa"  >
-      <body className={`p-0 m-0  ${VazirFont.className}`} >
+      <body className={` ${VazirFont.className}`} >
         <Navbar/>
         {children}
         <Footer/>
