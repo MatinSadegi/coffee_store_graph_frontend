@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "14.2.3",
+    "next-video": "^1.0.6",
     "query-string": "^9.0.0",
     "rc-slider": "^10.6.2",
     "react": "^18",
