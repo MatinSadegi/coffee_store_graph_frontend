@@ -18,7 +18,7 @@ const links = [
   },
   {
     title: "درباره ما",
-    path: "/",
+    path: "/about-us",
   },
   {
     title: "تماس با ما",
