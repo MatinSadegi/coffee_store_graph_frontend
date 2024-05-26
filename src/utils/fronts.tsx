@@ -10,3 +10,9 @@ export const NastaligFont = localFont({
 export const BNazaninFont = localFont({
   src: "../../public/fonts/B-NAZANIN.ttf",
 });
+export const IranSansMedium = localFont({
+  src: "../../public/fonts/IRANSansXMedium.ttf",
+});
+export const IranSansRegular = localFont({
+  src: "../../public/fonts/IRANSansXRegular.ttf",
+});
