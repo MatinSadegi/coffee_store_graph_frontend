@@ -35,7 +35,7 @@ const Links = () => {
           href={link.path}
           key={link.title}
           className={`hover:text-primary-600 transition-all ${
-            pathName === "/" ? " text-black" : " text-white"
+            pathName === "/" ? " text-white" : " text-white"
           }`}
         >
           {link.title}
