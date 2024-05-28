@@ -6,7 +6,7 @@ import basket from "@/public/icons/basket-svgrepo-com.svg";
 
 const FeaturedProduct = () => {
   return (
-    <div className=" flex flex-col items-center py-16 mx-auto mb-14 max-w-[1300px] px-8">
+    <div className=" flex flex-col items-center py-16 mx-auto  max-w-[1300px] px-8">
       <p className=" text-primary-600 text-center">
         انتخاب ما از قهوه ها و محصولات ویژه را بررسی کنید
       </p>
