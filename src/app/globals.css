@@ -5,6 +5,7 @@
 @layer base {
   :root {
     --color-primary-600: 206, 149, 86;
+    --color-primary-500:214, 159, 102;
     --color-primary-400: 215, 182, 121;
     --color-gray-500: 107, 114, 128;
     --color-brown-700: 0, 0, 0;
@@ -14,7 +15,7 @@
     @apply text-[2.5rem] md:text-[2.8rem] xl:text-5xl;
   }
   h2 {
-    @apply text-[2.6rem] ;
+    @apply text-[2.6rem] ; 
   }
   h3 {
     @apply text-3xl md:text-4xl ;
@@ -25,7 +26,7 @@
   h5 {
     @apply text-2xl;
   }
-}
+} 
 
 @layer utilities {
   .text-balance {
@@ -34,10 +35,10 @@
 }
 @layer components {
   .primary-button {
-    @apply text-white bg-primary-600 rounded-sm px-6 py-2;
+    @apply text-white bg-primary-600 rounded-sm px-6 py-2.5 transition-all hover:bg-primary-500 ;
   }
   .white-button {
-    @apply  text-primary-600 border border-primary-600 rounded-sm px-6 py-2;
+    @apply  text-primary-600 border border-primary-600 rounded-sm px-6 py-2.5 transition-all hover:bg-primary-600 hover:text-white;
   }
   .input {
     @apply border  w-full mt-5 p-3 placeholder:text-sm outline-none border-gray-500 focus:border-primary-600

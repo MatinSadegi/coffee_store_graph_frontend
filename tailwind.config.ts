@@ -18,6 +18,7 @@ const config: Config = {
       colors: {
         primary: {
           600: "rgba(var(--color-primary-600))",
+          500: "rgba(var(--color-primary-500))",
           400: "rgba(var(--color-primary-400),0.15)",
         },
         gray: {
@@ -26,6 +27,9 @@ const config: Config = {
         brown: {
           700: "rgba(var(--color-brown-700))",
         },
+      },
+      boxShadow: {
+        "3xl":"0px -20px 60px -2px rgba(0,0,0,0.1)",
       },
     },
   },
