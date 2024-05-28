@@ -17,12 +17,9 @@ const AboutUs = () => {
           درباره ما
         </h1>
       </div>
-      <div className=" max-w-[1200px] mx-auto py-16">
-        <h2 className={` text-center ${BNazaninFont.className} font-bold`}>
-          تعهد به کیفیت{" "}
-        </h2>
-        <div className="flex items-center mt-16 gap-12">
-          <div className="w-1/2 rounded-lg">
+      <div className=" max-w-[1300px] px-8 mx-auto py-16">
+        <div className="flex  flex-col items-center mt-16 gap-12 lg:flex-row">
+          <div className=" w-full lg:w-1/2 rounded-lg order-last lg:order-first">
             <Video
               src={aboutUsVideo}
               poster={poster.src}
@@ -31,11 +28,12 @@ const AboutUs = () => {
               style={{ aspectRatio: 3 / 2, borderRadius: "20px" }}
             />
           </div>
-          <div className=" w-1/2">
+          <div className=" lg:w-1/2 flex flex-col items-center text-center">
             <h4 className={`  ${BNazaninFont.className} font-bold`}>
               ما معتقدیم که بهترین در شهر هستیم
             </h4>
-            <p className=" pt-4">
+            <span className=" w-10 h-0.5 bg-primary-600 flex justify-center text-center my-5"></span>
+            <p className="">
               ماموریت ما این است که قهوه باکیفیت با منبع پایدار، دست چین شده و
               میکرو بو داده ارائه کنیم. قهوه عالی علاقه ماست و می خواهیم آن را
               با شما به اشتراک بگذاریم. ما در تلاش برای ایجاد مشارکت عمیق با
@@ -44,17 +42,17 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className=" my-24">
+        <div className=" mt-24 ">
           <p
             className={` text-center ${BNazaninFont.className} font-bold text-primary-600 text-xl`}
           >
             فلسفه ما
           </p>
-          <h2 className={` text-center ${BNazaninFont.className} font-bold `}>
+          <h4 className={` text-center ${BNazaninFont.className} font-bold `}>
             قهوه هنر ، آیین و اشتیاق ماست
-          </h2>
-          <span className=" w-0.5 h-10 bg-primary-600 flex text-center mx-auto mt-4"></span>
-          <p className=" max-w-[600px] mx-auto">
+          </h4>
+          <span className=" w-0.5 h-10 bg-primary-600 flex text-center mx-auto my-5"></span>
+          <p className=" max-w-[600px] mx-auto text-center">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
             ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
@@ -64,30 +62,29 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="flex overflow-hidden">
+      <div className="flex flex-col overflow-hidden sm:flex-row">
         <Image
           src={img2}
           alt="image"
-          className=" hover:scale-105 transition-all duration-500 w-1/2 object-cover"
-          
+          className=" hover:scale-105 transition-all duration-500 sm:w-1/2 object-cover"
         />
         <Image
           src={img3}
           alt="image"
-          className=" hover:scale-105 transition-all duration-500 w-1/2 object-cover"
+          className=" hover:scale-105 transition-all duration-500 sm:w-1/2 object-cover"
         />
       </div>
-      <div className=" my-24">
+      <div className=" my-24 px-8">
         <p
           className={` text-center ${BNazaninFont.className} font-bold text-primary-600 text-xl`}
         >
           داستان ما
         </p>
-        <h2 className={` text-center ${BNazaninFont.className} font-bold `}>
+        <h4 className={` text-center ${BNazaninFont.className} font-bold `}>
           قهوه هنر ، آیین و اشتیاق ماست
-        </h2>
-        <span className=" w-0.5 h-10 bg-primary-600 flex text-center mx-auto my-4"></span>
-        <p className=" max-w-[600px] mx-auto">
+        </h4>
+        <span className=" w-0.5 h-10 bg-primary-600 flex text-center mx-auto my-5"></span>
+        <p className=" max-w-[600px] mx-auto text-center">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
           از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
           سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
@@ -95,19 +92,19 @@ const AboutUs = () => {
           درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد
         </p>
       </div>
-      <div className="flex items-center">
-        <Image src={img4} alt="image" className=" w-1/2" />
-        <div className="mr-14">
+      <div className="flex flex-col items-center md:flex-row">
+        <Image src={img4} alt="image" className=" w-full md:w-1/2" />
+        <div className="mr-14 my-14 md:my-0 flex flex-col items-center md:items-start">
           <p
             className={`  ${BNazaninFont.className} font-bold text-primary-600 text-xl`}
           >
             اهداف ما
           </p>
-          <h2 className={`  ${BNazaninFont.className} font-bold `}>
+          <h4 className={`  ${BNazaninFont.className} font-bold `}>
             قهوه هنر ، آیین و اشتیاق ماست
-          </h2>
-          <span className=" w-10 h-0.5 bg-primary-600 flex text-center  my-8"></span>
-          <p className=" max-w-[600px] mx-auto">
+          </h4>
+          <span className=" w-10 h-0.5 bg-primary-600 flex text-center  my-5"></span>
+          <p className=" max-w-[600px] mx-auto pl-8 text-center md:text-right">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
             ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و

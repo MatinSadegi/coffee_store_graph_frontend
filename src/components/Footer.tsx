@@ -66,7 +66,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="  flex flex-col mt-24 gap-6 md:gap-0 items-center justify-between md:mt-8 px-10 md:flex-row">
+      <div className="  flex flex-col mt-24 gap-6 items-center md:gap-0 md:items-end justify-between md:mt-8 px-10 md:flex-row">
         <span className=" text-white text-xs">
           © تمامی حقوق این وبسایت برای گراف محفوظ می‌باشد.
         </span>
