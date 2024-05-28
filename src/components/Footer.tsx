@@ -1,20 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import logo from "@/public/icons/graph-png-removebg.png";
-import twitterIcon from '@/public/icons/twitter-svgrepo-com (1).svg'
-import telegramIcon from '@/public/icons/telegram-svgrepo-com.svg'
-import instagramIcon from '@/public/icons/instagram-svgrepo-com.svg'
-import { NastaligFont } from "../utils/fronts";
+import twitterIcon from "@/public/icons/twitter-svgrepo-com (1).svg";
+import telegramIcon from "@/public/icons/telegram-svgrepo-com.svg";
+import instagramIcon from "@/public/icons/instagram-svgrepo-com.svg";
+import { BNazaninFont } from "../utils/fronts";
 
 const Footer = () => {
   return (
-    <footer className=" w-full bg-brown-700 py-20">
-      <div className=" max-w-[1200px] flex justify-between mx-auto">
-        <div>
-          <div className=" flex flex-col justify-center items-center mb-4">
-            <Image src={logo} alt="logo" width={90} height={90} />
-            {/* <h2 className={`${NastaligFont.className} text-white`}>گراف</h2> */}
-          </div>
+    <footer className=" w-full bg-brown-700 py-10">
+      <div className=" max-w-[1300px] px-8 flex flex-col gap-8 justify-between items-center mx-auto md:gap-0 md:flex-row">
+        <div className=" order-last md:order-first flex flex-col items-center gap-5">
+          <h5 className={`${BNazaninFont.className} text-primary-600`}>
+            در صفحه ی مجازی مارو دنبال کنید
+          </h5>
           <div className=" flex items-center gap-2">
             <Image
               src={twitterIcon}
@@ -33,8 +32,9 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div>
-          <h4 className={`${NastaligFont.className} text-primary-600`}>
+
+        <div className=" text-center">
+          <h4 className={`${BNazaninFont.className} text-primary-600`}>
             مجموعه
           </h4>
           <ul className=" pt-4 flex flex-col space-y-2 text-white">
@@ -43,8 +43,8 @@ const Footer = () => {
             <li>سوالات متداول</li>
           </ul>
         </div>
-        <div>
-          <h4 className={`${NastaligFont.className}  text-primary-600`}>
+        <div className=" text-center">
+          <h4 className={`${BNazaninFont.className}  text-primary-600`}>
             سرویس ها
           </h4>
           <ul className=" pt-4 flex flex-col space-y-2 text-white">
@@ -53,8 +53,9 @@ const Footer = () => {
             <li>وبلاگ</li>
           </ul>
         </div>
-        <div>
-          <h4 className={`${NastaligFont.className} text-primary-600`}>
+
+        <div className=" text-center">
+          <h4 className={`${BNazaninFont.className} text-primary-600`}>
             ارتباط با ما
           </h4>
           <ul className=" pt-4 flex flex-col space-y-2 text-white">
@@ -64,6 +65,13 @@ const Footer = () => {
             <li>اینستاگرام : coffeeStoreGraph</li>
           </ul>
         </div>
+      </div>
+      <div className="  flex flex-col mt-24 gap-6 md:gap-0 items-center justify-between md:mt-8 px-10 md:flex-row">
+        <span className=" text-white text-xs">
+          © تمامی حقوق این وبسایت برای گراف محفوظ می‌باشد.
+        </span>
+        <Image src={logo} alt="logo" width={100} height={100} className="ml-0 md:ml-20 " />
+        <span className=" text-white text-xs">prod. by Matin.Sadeghi</span>
       </div>
     </footer>
   );
