@@ -29,7 +29,7 @@ const config: Config = {
         },
       },
       boxShadow: {
-        "3xl":"0px -20px 60px -2px rgba(0,0,0,0.1)",
+        "3xl": "0px 0px 60px -30px rgba(0,0,0,0.3)",
       },
     },
   },
