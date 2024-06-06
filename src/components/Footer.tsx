@@ -37,7 +37,7 @@ const Footer = () => {
           <h4 className={`${BNazaninFont.className} text-primary-600`}>
             مجموعه
           </h4>
-          <ul className=" pt-4 flex flex-col space-y-2 text-white">
+          <ul className=" pt-4 flex flex-col  space-y-2 text-white">
             <li>درباره ما</li>
             <li>قوانین و مقررات</li>
             <li>سوالات متداول</li>
@@ -70,7 +70,13 @@ const Footer = () => {
         <span className=" text-white text-xs">
           © تمامی حقوق این وبسایت برای گراف محفوظ می‌باشد.
         </span>
-        <Image src={logo} alt="logo" width={100} height={100} className="ml-0 md:ml-20 " />
+        <Image
+          src={logo}
+          alt="logo"
+          width={100}
+          height={100}
+          className="ml-0 md:ml-20 "
+        />
         <span className=" text-white text-xs">prod. by Matin.Sadeghi</span>
       </div>
     </footer>
