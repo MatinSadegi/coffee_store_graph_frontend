@@ -1,7 +1,5 @@
 import React from "react";
-
 interface CheckBoxProps {
-  id: string;
   name: string;
   checked: boolean;
   value: string;
@@ -9,30 +7,20 @@ interface CheckBoxProps {
   onChange: React.ChangeEventHandler;
 }
 
-const CheckBox = ({
-  id,
-  name,
-  value,
-  label,
-  checked,
-  onChange,
-}: CheckBoxProps) => {
+const CheckBox = ({ name, value, label, checked, onChange }: CheckBoxProps) => {
   return (
-    <div className="flex items-center text-gray-700 justify-between relative ">
-      <label htmlFor={id} className="">
-        {label}
-      </label>
+    <li className="flex font-normal items-center text-gray-700 justify-between relative ">
       <input
         type="checkbox"
         name={name}
-        id={id}
+        id={name}
         value={value}
         onChange={onChange}
-        checked={checked}
-        className=" relative peer
-    appearance-none w-6 h-6  bg-gray-300 rounded-sm 
+        // checked={checked}
+        className="relative peer
+appearance-none w-6 h-6  bg-gray-300 rounded-sm 
     mt-1
-    checked:bg-white checked:border-2 checked:border-orange "
+    checked:bg-white checked:border-2 checked:border-orange"
       />
       <svg
         className="absolute right-0 top-0 pointer-events-none  -translate-x-1 translate-y-[3px]  w-4 h-4 mt-1 hidden peer-checked:block z-20"
@@ -46,8 +34,12 @@ const CheckBox = ({
       >
         <polyline points="20 6 9 17 4 12"></polyline>
       </svg>
-    </div>
+      <label htmlFor={name} className=" ">
+        {label}
+      </label>
+    </li>
   );
 };
 
 export default CheckBox;
+
