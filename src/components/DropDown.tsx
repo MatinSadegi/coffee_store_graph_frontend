@@ -16,7 +16,7 @@ const DropDown: React.FC<DropDownProps> = ({ items, trigger }) => {
 
   return (
     <div
-      className={`w-40 relative text-gray-500 text-sm font-light ${
+      className={`w-40 relative text-gray-500 text-sm font-light mb-8 ${
         dropDown ? "overflow-hidden" : " overflow-visible"
       } `}
     >
@@ -55,17 +55,6 @@ const DropDown: React.FC<DropDownProps> = ({ items, trigger }) => {
         })}
       </ul>
     </div>
-    // <div className=" w-10 h-10   bg-red-400  ">
-    //   {/* <div className="  h-10 flex justify-between items-center ">
-    //     <p className="">{selectedItem}</p>
-    //       <Image
-    //         src={downIcon}
-    //         alt="down-icon"
-    //         className={`${dropDown ? "rotate-0" : "rotate-180"} transition-all`}
-    //       />
-
-    //   </div> */}
-    // </div>
   );
 };
 
