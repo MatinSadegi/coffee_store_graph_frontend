@@ -5,14 +5,16 @@ import { BNazaninFont } from "@/src/utils/fronts";
 import { getProductBySlug } from "@/src/services/productServices";
 import AddToCart from "@/src/components/AddToCart";
 import { numberWithCommas } from "@/src/utils/numberWithCommas";
+import ButtonSpinner from "@/src/components/spinner";
 
 const Product = async ({ params }: { params: { slug: string } }) => {
+
   const slug = params.slug;
   const productDetails = await getProductBySlug(slug);
-  const { title, price, description, category, image, _id } =
+  const { title, price, description, category, image, _id, inStock } =
     productDetails;
   return (
-    <div className=" max-w-[1300px] px-8   mx-auto pt-44">
+    <div className=" max-w-[1300px] px-8  mx-auto pt-44">
       <div className=" w-full gap-10 flex flex-col md:flex-row md:items-center  ">
         <div className="md:w-1/2">
           <Image
@@ -30,7 +32,7 @@ const Product = async ({ params }: { params: { slug: string } }) => {
             {numberWithCommas(price[0])} <span>تومان</span>{" "}
           </p>
           <p className=" my-6">{description}</p>
-          <AddToCart category={category} productId={_id} />
+          <AddToCart category={category} productId={_id} inStock={inStock} />
         </div>
       </div>
       <div className=" w-full mt-32 mb-28">

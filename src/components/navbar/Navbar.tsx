@@ -1,21 +1,22 @@
 "use client";
-import { useState } from "react";
+import { useState} from "react";
 import Image from "next/image";
 import Links from "./links/Links";
-import { usePathname } from "next/navigation";
-import { NastaligFont } from "@/src/utils/fronts";
 import logo from "@/public/icons/graph-png-removebg.png";
 import searchIcon from "@/public/icons/search-night.svg";
 import cartIcon from "@/public/icons/cart-night.svg";
 import hamburgerIcon from "@/public/icons/hamburger-4-svgrepo-com.svg";
 import multiplyIcon from "@/public/icons/multiply-svgrepo-com(1).svg";
+import { useRouter } from "next/navigation";
+import { useAppContext } from "@/src/context";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
+  const { cartItems} = useAppContext();
+
+  const router = useRouter();
   return (
-    <nav
-      className={` py-3 absolute  w-full bg-brown-700`}
-    >
+    <nav className={` py-3 absolute  w-full bg-brown-700`}>
       <div className=" max-w-[1300px]  flex justify-between items-center text-black mx-auto px-8">
         <div className=" flex items-center lg:w-1/4 w-full justify-between ">
           <Image
@@ -25,7 +26,7 @@ const Navbar = () => {
             onClick={() => setShowNavbar(true)}
           />
           <div className="flex items-center">
-            <Image src={logo} alt="logo" width={50} height={50} />
+            <Image src={logo} alt="logo" width={50} height={50} priority />
             {/* <p
               className={`${pathName === "/" ? " text-black" : " text-white"} ${
                 NastaligFont.className
@@ -48,14 +49,16 @@ const Navbar = () => {
           />
           <Links />
           <div className="flex lg:justify-end gap-5 order-first lg:order-last lg:w-1/3 ">
-            <Image
-              src={searchIcon}
-              alt="search-icon"
-            />
-            <Image
-              src={cartIcon}
-              alt="cart-icon"
-            />
+            <Image src={searchIcon} alt="search-icon" />
+            <div
+              className="relative cursor-pointer flex items-center"
+              onClick={() => router.push("/cart")}
+            >
+              <span className=" w-5 h-4 rounded-xl bg-primary-600 absolute top-1 -right-2.5 text-white text-center text-xs">
+                {cartItems?.products ? cartItems.countTotal : 0}
+              </span>
+              <Image src={cartIcon} alt="cart-icon" />
+            </div>
             <button className=" primary-button">ثبت نام</button>
           </div>
         </div>
