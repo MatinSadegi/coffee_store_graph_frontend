@@ -32,7 +32,7 @@ const CategoryDropDown: React.FC<CategoryDropDownProps> = ({
     [searchParams]
   );
 
-  const categoryHandler = (e: any) => {
+  const categoryHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     if (selectedSubCategories.includes(value)) {
       const categories = selectedSubCategories.filter(

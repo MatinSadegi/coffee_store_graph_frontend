@@ -9,6 +9,8 @@ interface ProductCardProps {
   slug: string;
 }
 
+
+
 const ProductCard = ({ title, price, imageUrl, slug }: ProductCardProps) => {
   return (
     <Link
