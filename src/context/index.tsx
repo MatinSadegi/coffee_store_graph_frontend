@@ -10,14 +10,14 @@ import {
   SetStateAction,
 } from "react";
 import { addToCartHandler, getCart } from "../services/cartServices";
-import { CartData } from "../types/types";
+import { FormDataProps } from "../types/types";
 
 interface ContextType {
   quantity: number;
   setQuantity: Dispatch<SetStateAction<number>>;
   cartItems: any;
   setCartItems: Dispatch<SetStateAction<any>>;
-  addToCart: (formData: CartData) => Promise<void>;
+  addToCart: (formData: FormDataProps) => Promise<void>;
   loading: boolean;
 }
 
@@ -28,7 +28,7 @@ export function AppWrapper({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(false);
   const [cartItems, setCartItems] = useState<any>({});
 
-  const addToCart = async (formData: CartData) => {
+  const addToCart = async (formData: FormDataProps) => {
     setLoading(true);
     await addToCartHandler(formData);
   };

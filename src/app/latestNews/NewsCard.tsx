@@ -11,15 +11,15 @@ interface CardProps {
 
 const NewsCard = ({ date, title, author }: CardProps) => {
   return (
-    <div className=" w-[410px] bg-white">
-      <Image src={blog1} alt="blog" />
-      <div className=" py-5 px-7">
+    <div className="  bg-white shadow-3xl">
+      <Image src={blog1} alt="blog" className=" rounded-sm" />
+      <div className=" p-5  lg:px-7">
         <div className="flex items-center justify-between text-sm text-gray-500">
           <p>{date}</p>
           <p>{author}</p>
         </div>
-        <h5 className={`${BNazaninFont.className} py-4`}>{title}</h5>
-        <p className=" text-sm text-primary-600">مشاهده بیشتر</p>
+        <p className={` py-4`}>{title}</p>
+        <p className=" text-sm text-primary-600 cursor-pointer">مشاهده بیشتر</p>
       </div>
     </div>
   );

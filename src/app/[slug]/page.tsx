@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import DropDown from "@/src/components/DropDown";
 import { BNazaninFont } from "@/src/utils/fronts";
 import { getProductBySlug } from "@/src/services/productServices";
 import AddToCart from "@/src/components/AddToCart";
 import { numberWithCommas } from "@/src/utils/numberWithCommas";
-import ButtonSpinner from "@/src/components/spinner";
+
 
 const Product = async ({ params }: { params: { slug: string } }) => {
 
@@ -29,7 +28,7 @@ const Product = async ({ params }: { params: { slug: string } }) => {
           <p
             className={`${BNazaninFont.className} font-bold mt-5 text-3xl text-primary-600`}
           >
-            {numberWithCommas(price[0])} <span>تومان</span>{" "}
+            {numberWithCommas(price)} <span>تومان</span>{" "}
           </p>
           <p className=" my-6">{description}</p>
           <AddToCart category={category} productId={_id} inStock={inStock} />

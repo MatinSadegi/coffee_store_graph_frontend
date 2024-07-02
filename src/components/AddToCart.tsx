@@ -1,13 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import { addToCartHandler } from "../services/cartServices";
 import Image from "next/image";
-import DropDown from "./DropDown";
 import minusIcon from "@/public/icons/minus-svgrepo-com.svg";
 import plusIcon from "@/public/icons/plus-svgrepo-com.svg";
-import grayMinusIcon from "@/public/icons/minus-gray.svg";
 import { useAppContext } from "../context";
-import ButtonSpinner from "@/src/components/spinner/index";
+import ButtonSpinner from "@/src/components/spinner/ButtonSpinner";
 
 
 interface AddToCartProps {

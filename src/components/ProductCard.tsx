@@ -4,7 +4,7 @@ import Link from "next/link";
 
 interface ProductCardProps {
   title: string;
-  price: number[];
+  price: number;
   imageUrl: string;
   slug: string;
 }
@@ -27,7 +27,7 @@ const ProductCard = ({ title, price, imageUrl, slug }: ProductCardProps) => {
       <p
         className={`text-primary-600 ${BNazaninFont.className} text-xl font-bold mt-1`}
       >
-        {price[0]} تومان
+        {price} تومان
       </p>
     </Link>
   );
