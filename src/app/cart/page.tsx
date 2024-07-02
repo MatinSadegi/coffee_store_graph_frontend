@@ -27,7 +27,7 @@ const Cart = () => {
             >
               <li className=" flex items-center justify-center gap-1 ">
                 <Image
-                  src={`http://localhost:5000/${product.image.url}`}
+                  src={`https://coffee-store-graph-backend.onrender.com/${product.image.url}`}
                   alt="product_img"
                   width={70}
                   height={70}

@@ -1,4 +1,4 @@
-import { NastaligFont, BNazaninFont } from "@/src/utils/fronts";
+import { NastaligFont} from "@/src/utils/fronts";
 import Sort from "./Sort";
 import ProductCard from "@/src/components/ProductCard";
 import FilterSideBar from "./FilterSideBar";
