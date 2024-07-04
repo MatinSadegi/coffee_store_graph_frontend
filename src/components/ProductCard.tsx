@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { BNazaninFont } from "../utils/fronts";
 import Link from "next/link";
 
 interface ProductCardProps {
@@ -23,7 +22,7 @@ const ProductCard = ({ title, price, imageUrl, slug }: ProductCardProps) => {
       />
       <p className=" mt-3">{title}</p>
       <p
-        className={`text-primary-600 ${BNazaninFont.className} text-xl font-bold mt-1`}
+        className={`text-primary-600 font-BNazanin text-xl font-bold mt-1`}
       >
         {price} تومان
       </p>
