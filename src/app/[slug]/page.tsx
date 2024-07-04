@@ -15,7 +15,7 @@ const Product = async ({ params }: { params: { slug: string } }) => {
       <div className=" w-full gap-10 flex flex-col md:flex-row md:items-center  ">
         <div className="md:w-1/2">
           <Image
-            src={`http://localhost:5000/${image.url}`}
+            src={`https://coffee-store-graph-backend.onrender.com/${image.url}`}
             width={500}
             height={400}
             alt="product-img"
