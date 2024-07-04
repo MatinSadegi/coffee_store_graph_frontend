@@ -8,11 +8,16 @@ import cartIcon from "@/public/icons/cart-night.svg";
 import hamburgerIcon from "@/public/icons/hamburger-4-svgrepo-com.svg";
 import multiplyIcon from "@/public/icons/multiply-svgrepo-com(1).svg";
 import { useRouter } from "next/navigation";
-import { useAppContext } from "@/src/context";
+import { useQuery } from "@tanstack/react-query";
+import { getCart } from "@/src/services/cartServices";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
-  const { cartItems} = useAppContext();
+  const { data } = useQuery({
+    queryKey: ["cart"],
+    queryFn: getCart,
+  });
+
 
   const router = useRouter();
   return (
@@ -54,9 +59,12 @@ const Navbar = () => {
               className="relative cursor-pointer flex items-center"
               onClick={() => router.push("/cart")}
             >
-              <span className=" w-5 h-4 rounded-xl bg-primary-600 absolute top-1 -right-2.5 text-white text-center text-xs">
-                {cartItems?.products ? cartItems.countTotal : 0}
-              </span>
+              {data?.products && (
+                <span className=" w-5 h-4 rounded-xl bg-primary-600 absolute top-1 -right-2.5 text-white text-center text-xs">
+                   {data.countTotal }
+                </span>
+              )}
+
               <Image src={cartIcon} alt="cart-icon" />
             </div>
             <button className=" primary-button">ثبت نام</button>

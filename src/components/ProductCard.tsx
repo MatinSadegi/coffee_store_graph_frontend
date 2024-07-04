@@ -9,8 +9,6 @@ interface ProductCardProps {
   slug: string;
 }
 
-
-
 const ProductCard = ({ title, price, imageUrl, slug }: ProductCardProps) => {
   return (
     <Link
@@ -18,7 +16,7 @@ const ProductCard = ({ title, price, imageUrl, slug }: ProductCardProps) => {
       className={`text-center  flex flex-col items-center border-b border-l py-6 px-3 cursor-pointer transition-all hover:shadow-xl `}
     >
       <Image
-        src={`https://coffee-store-graph-backend.onrender.com/${imageUrl}`}
+        src={`http://localhost:5000/${imageUrl}`}
         alt="product-img"
         width={160}
         height={160}

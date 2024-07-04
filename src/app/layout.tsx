@@ -1,12 +1,12 @@
-'use client'
+"use client";
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "../components/navbar/Navbar";
 import { VazirFont } from "../utils/fronts";
 import Footer from "../components/Footer";
 import { AppWrapper } from "../context";
-
- 
+import Provider from "../utils/Provider";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -21,11 +21,14 @@ export default function RootLayout({
   return (
     <html dir="rtl" lang="fa">
       <body className={` ${VazirFont.className}`}>
-        <AppWrapper>
-          <Navbar />
-          {children}
-          <Footer />
-        </AppWrapper>
+        <Provider>
+          <ReactQueryDevtools  />
+          <AppWrapper>
+            <Navbar />
+            {children}
+            <Footer />
+          </AppWrapper>
+        </Provider>
       </body>
     </html>
   );

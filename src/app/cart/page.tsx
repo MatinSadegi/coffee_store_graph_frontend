@@ -3,13 +3,22 @@ import Image from "next/image";
 import { numberWithCommas } from "@/src/utils/numberWithCommas";
 import minusIcon from "@/public/icons/minus-svgrepo-com.svg";
 import plusIcon from "@/public/icons/plus-svgrepo-com.svg";
-import { useAppContext } from "@/src/context";
 import { CartProduct } from "@/src/types/types";
+import { useQuery } from "@tanstack/react-query";
+import { getCart } from "@/src/services/cartServices";
+import PageLoadingSpinner from "@/src/components/spinner/PageLoadingSpinner";
 
 const Cart = () => {
-  const { cartItems } = useAppContext();
-  if (cartItems?.products) {
-    const { products, cartTotal, countTotal } = cartItems;
+  const { data, isFetching } = useQuery({
+    queryKey: ["cart"],
+    queryFn: getCart,
+  });
+  console.log(isFetching);
+  if (isFetching) {
+    return <PageLoadingSpinner />;
+  }
+  if (data?.products) {
+    const { products, cartTotal, countTotal } = data;
     return (
       <div className=" pt-36 pb-16 max-w-[1300px] mx-auto ">
         <h4 className=" text-center mb-20">سبد خرید </h4>
@@ -27,7 +36,7 @@ const Cart = () => {
             >
               <li className=" flex items-center justify-center gap-1 ">
                 <Image
-                  src={`https://coffee-store-graph-backend.onrender.com/${product.image.url}`}
+                  src={`http://localhost:5000/${product.image.url}`}
                   alt="product_img"
                   width={70}
                   height={70}

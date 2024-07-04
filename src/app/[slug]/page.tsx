@@ -5,9 +5,7 @@ import { getProductBySlug } from "@/src/services/productServices";
 import AddToCart from "@/src/components/AddToCart";
 import { numberWithCommas } from "@/src/utils/numberWithCommas";
 
-
 const Product = async ({ params }: { params: { slug: string } }) => {
-
   const slug = params.slug;
   const productDetails = await getProductBySlug(slug);
   const { title, price, description, category, image, _id, inStock } =
@@ -17,7 +15,7 @@ const Product = async ({ params }: { params: { slug: string } }) => {
       <div className=" w-full gap-10 flex flex-col md:flex-row md:items-center  ">
         <div className="md:w-1/2">
           <Image
-            src={`https://coffee-store-graph-backend.onrender.com/${image.url}`}
+            src={`http://localhost:5000/${image.url}`}
             width={500}
             height={400}
             alt="product-img"
