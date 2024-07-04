@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "../components/navbar/Navbar";
-import { VazirFont } from "../utils/fronts";
+
 import Footer from "../components/Footer";
 import { AppWrapper } from "../context";
 import Provider from "../utils/Provider";
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html dir="rtl" lang="fa">
-      <body className={` ${VazirFont.className}`}>
+      <body className="font-Vazir">
         <Provider>
           <ReactQueryDevtools  />
           <AppWrapper>

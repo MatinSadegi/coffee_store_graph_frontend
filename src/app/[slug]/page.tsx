@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { BNazaninFont } from "@/src/utils/fronts";
 import { getProductBySlug } from "@/src/services/productServices";
 import AddToCart from "@/src/components/AddToCart";
 import { numberWithCommas } from "@/src/utils/numberWithCommas";
@@ -22,9 +21,9 @@ const Product = async ({ params }: { params: { slug: string } }) => {
           />
         </div>
         <div className="md:w-1/2 px-10 flex flex-col md:px-0 md:py-10">
-          <h5 className={`${BNazaninFont.className} font-bold `}>{title}</h5>
+          <h5 className={` font-BNazanin font-bold `}>{title}</h5>
           <p
-            className={`${BNazaninFont.className} font-bold mt-5 text-3xl text-primary-600`}
+            className={` font-BNazanin font-bold mt-5 text-3xl text-primary-600`}
           >
             {numberWithCommas(price)} <span>تومان</span>{" "}
           </p>

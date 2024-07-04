@@ -1,4 +1,4 @@
-import { NastaligFont} from "@/src/utils/fronts";
+
 import Sort from "./Sort";
 import ProductCard from "@/src/components/ProductCard";
 import FilterSideBar from "./FilterSideBar";
@@ -17,7 +17,7 @@ const Shop = async ({
   return (
     <div className=" ">
       <div className=" h-[60vh] bg-coffee-background bg-cover bg-center flex justify-center items-center">
-        <h1 className={`${NastaligFont.className} text-white text-6xl pt-14`}>
+        <h1 className={` font-Nastalig text-white text-6xl pt-14`}>
           فروشگاه گراف
         </h1>
       </div>

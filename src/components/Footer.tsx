@@ -4,14 +4,14 @@ import logo from "@/public/icons/graph-png-removebg.png";
 import twitterIcon from "@/public/icons/twitter-svgrepo-com (1).svg";
 import telegramIcon from "@/public/icons/telegram-svgrepo-com.svg";
 import instagramIcon from "@/public/icons/instagram-svgrepo-com.svg";
-import { BNazaninFont } from "../utils/fronts";
+
 
 const Footer = () => {
   return (
     <footer className=" w-full bg-brown-700 py-10">
       <div className=" max-w-[1300px] px-8 flex flex-col gap-8 justify-between items-center mx-auto md:gap-0 md:flex-row">
         <div className=" order-last md:order-first flex flex-col items-center gap-5">
-          <h5 className={`${BNazaninFont.className} text-primary-600`}>
+          <h5 className={` font-BNazanin  text-primary-600`}>
             در صفحه ی مجازی مارو دنبال کنید
           </h5>
           <div className=" flex items-center gap-2">
@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
 
         <div className=" text-center">
-          <h4 className={`${BNazaninFont.className} text-primary-600`}>
+          <h4 className={` font-BNazanin text-primary-600`}>
             مجموعه
           </h4>
           <ul className=" pt-4 flex flex-col  space-y-2 text-white">
@@ -44,7 +44,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className=" text-center">
-          <h4 className={`${BNazaninFont.className}  text-primary-600`}>
+          <h4 className={` font-BNazanin  text-primary-600`}>
             سرویس ها
           </h4>
           <ul className=" pt-4 flex flex-col space-y-2 text-white">
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className=" text-center">
-          <h4 className={`${BNazaninFont.className} text-primary-600`}>
+          <h4 className={` font-BNazanin text-primary-600`}>
             ارتباط با ما
           </h4>
           <ul className=" pt-4 flex flex-col space-y-2 text-white">

@@ -37,6 +37,37 @@
   }
 }
 
+@font-face {
+  font-family: 'BNazanin';
+  src: url('../../public/fonts/B-NAZANIN.ttf') format('truetype');
+  font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Vazir';
+  src: url('../../public/fonts/Vazir.ttf') format('truetype');
+  font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Nastalig';
+  src: url('../../public/fonts/IranNastaliq.ttf') format('truetype');
+  font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'IranSansMedium';
+  src: url('../../public/fonts/IRANSansXMedium.ttf') format('truetype');
+  font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'IranSansRegular';
+  src: url('../../public/fonts/IRANSansXRegular.ttf') format('truetype');
+  font-weight: normal;
+    font-style: normal;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -16,6 +16,13 @@ const config: Config = {
         "coffee-background":
           "linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('/images/reservation-bg.jpg')",
       },
+      fontFamily:{
+          'BNazanin': ['BNazanin', 'sans-serif'],
+          'Vazir': ['Vazir', 'sans-serif'],
+          'Nastalig': ['Nastalig', 'sans-serif'],
+          'IranSansMedium': ['IranSansMedium', 'sans-serif'],
+          'IranSansRegular': ['IranSansRegular', 'sans-serif'],
+      },
       colors: {
         primary: {
           600: "rgba(var(--color-primary-600))",

@@ -1,21 +1,19 @@
-import React from 'react'
-import { NastaligFont,BNazaninFont } from '@/src/utils/fronts';
-import Image from 'next/image';
-import callIcon from '@/public/images/call.png'
-
+import React from "react";
+import Image from "next/image";
+import callIcon from "@/public/images/call.png";
 
 const ContactUs = () => {
   return (
     <div>
       <div className=" h-[60vh] bg-coffee-background bg-cover bg-center flex justify-center items-center">
-        <h1 className={`${NastaligFont.className} text-white text-6xl pt-14`}>
+        <h1 className={` font-Nastalig text-white text-6xl pt-14`}>
           تماس با ما
         </h1>
       </div>
       <div className=" flex justify-center max-w-[1200px] mx-auto gap-5 py-24">
         <div>
           <Image src={callIcon} alt="call" className="mx-auto" />
-          <h2 className={`${BNazaninFont.className}`}>تماس با ما</h2>
+          <h2 className=" font-BNazanin">تماس با ما</h2>
           <p className=" py-5">
             برای ارسال پیشنهادات و نظرات‌تان لطفا فرم زیر را پر کنید تا
             کارشناسان ما بعد از بررسی با شما ارتباط بگیرند.
@@ -37,7 +35,7 @@ const ContactUs = () => {
           </form>
         </div>
       </div>
-      <div className=' overflow-hidden'>
+      <div className=" overflow-hidden">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199.26329069679076!2d45.39665970740109!3d36.956977795557556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4004f3bf7558a3bf%3A0xebf499b4b1148b05!2z2qnYp9mB24wg2KfYs9iq2YjYsSDar9ix2KfZgQ!5e0!3m2!1sen!2s!4v1716402385977!5m2!1sen!2s"
           style={{
@@ -50,6 +48,6 @@ const ContactUs = () => {
       </div>
     </div>
   );
-}
+};
 
 export default ContactUs;

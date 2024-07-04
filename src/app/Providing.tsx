@@ -1,5 +1,5 @@
 import React from 'react'
-import { BNazaninFont, IranSansRegular, VazirFont } from '../utils/fronts';
+
 import Image from 'next/image';
 import coffee1 from '@/public/images/abdallaa-alebrahim-bXSeymxOQdM-unsplash.jpg'
 import coffee2 from '@/public/images/lex-sirikiat-J-4ozdP9EQ0-unsplash.jpg'
@@ -11,7 +11,7 @@ const Providing = () => {
         <p className=" text-primary-600">
           از طعم های گلدار و روشن تا طعم های قهوه ای تند و صاف
         </p>
-        <h3 className={`${BNazaninFont.className} mt-8`}>
+        <h3 className={` font-BNazanin mt-8`}>
           ارائه تجربه منحصر به فرد قهوه
         </h3>
       </div>

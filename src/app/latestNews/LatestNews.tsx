@@ -1,6 +1,6 @@
 import React from "react";
 import NewsCard from "./NewsCard";
-import { BNazaninFont } from "@/src/utils/fronts";
+
 import nextIcon from "@/public/icons/arrow-sm-right-svgrepo-com.svg";
 import previousIcon from "@/public/icons/arrow-sm-left-svgrepo-com.svg";
 import Image from "next/image";
@@ -32,7 +32,7 @@ const LatestNews = () => {
       <div className=" max-w-[1300px] px-8 ">
         <div className=" flex justify-between items-center">
           <div className=" "> 
-            <h3 className={`${BNazaninFont.className}`}> مقالات</h3>
+            <h3 className=" font-BNazanin"> مقالات</h3>
             <p className=" text-gray-500">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
               استفاده از طراحان گرافیک است.

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import blog1 from '@/public/images/nathan-dumlao-6VhPY27jdps-unsplash.jpg';
-import { BNazaninFont } from "@/src/utils/fronts";
+
 
 interface CardProps {
   date: string;

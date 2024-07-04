@@ -1,6 +1,6 @@
 
 import React from "react";
-import { NastaligFont } from "../utils/fronts";
+
 
 const Header = () => {
 
@@ -8,7 +8,7 @@ const Header = () => {
     <header className="  bg-header-background  bg-cover h-screen sm:bg-top sm:h-[80vh]">
       <div className=" max-w-[1300px] px-8 h-full  flex flex-col justify-end pt-9 pb-20 mx-auto sm:pb-0 sm:justify-center">
         <div className=" text-center sm:w-[50%] sm:text-right  ">
-          <h1 className={` leading-relaxed ${NastaligFont.className}`}>
+          <h1 className={` leading-relaxed font-Nastalig`}>
             تا زمانی که <span className=" text-primary-600">قهوه</span> در جهان
             وجود دارد <br />
             اوضاع مگر می‌شود بد باشد؟
