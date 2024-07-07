@@ -10,9 +10,12 @@ import multiplyIcon from "@/public/icons/multiply-svgrepo-com(1).svg";
 import { useRouter } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import { getCart } from "@/src/services/cartServices";
+import { useAppContext } from "@/src/context";
+
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false);
+
+  const {showNavbar,setShowNavbar}= useAppContext()
   const { data } = useQuery({
     queryKey: ["cart"],
     queryFn: getCart,
