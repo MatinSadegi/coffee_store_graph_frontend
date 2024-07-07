@@ -4,7 +4,7 @@ import offerImg1 from "@/public/images/alexander-schimmeck-18YAaOcqA8o-unsplash.
 import offerImg2 from "@/public/images/mike-kenneally-TD4DBagg2wE-unsplash.jpg";
 import localFont from "next/font/local";
 
-const BNazanin = localFont({ src: "../../public/fonts/B-NAZANIN.ttf" });
+const BNazanin = localFont({ src: "../public/fonts/B-NAZANIN.ttf" });
 
 
 const Offer = () => {

@@ -4,7 +4,7 @@ import callIcon from "@/public/images/call.png";
 
 import localFont from "next/font/local";
 
-const BNazanin = localFont({ src: "../../../public/fonts/B-NAZANIN.ttf" });
+const BNazanin = localFont({ src: "../../public/fonts/B-NAZANIN.ttf" });
 
 const ContactUs = () => {
   return (

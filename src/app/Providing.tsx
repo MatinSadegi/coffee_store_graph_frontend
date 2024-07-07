@@ -5,7 +5,7 @@ import coffee1 from '@/public/images/abdallaa-alebrahim-bXSeymxOQdM-unsplash.jpg
 import coffee2 from '@/public/images/lex-sirikiat-J-4ozdP9EQ0-unsplash.jpg';
 import localFont from "next/font/local";
 
-const BNazanin = localFont({ src: "../../public/fonts/B-NAZANIN.ttf" });
+const BNazanin = localFont({ src: "../public/fonts/B-NAZANIN.ttf" });
 
 const Providing = () => {
   return (

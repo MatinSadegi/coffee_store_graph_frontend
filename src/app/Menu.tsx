@@ -1,7 +1,7 @@
 import React from "react";
 import localFont from "next/font/local";
 
-const BNazanin = localFont({ src: "../../public/fonts/B-NAZANIN.ttf" });
+const BNazanin = localFont({ src: "../public/fonts/B-NAZANIN.ttf" });
 
  
 const Menu = () => {

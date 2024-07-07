@@ -6,7 +6,7 @@ import telegramIcon from "@/public/icons/telegram-svgrepo-com.svg";
 import instagramIcon from "@/public/icons/instagram-svgrepo-com.svg";
 import localFont from "next/font/local";
 
-const BNazanin = localFont({ src: "../../public/fonts/B-NAZANIN.ttf" });
+const BNazanin = localFont({ src: "../public/fonts/B-NAZANIN.ttf" });
 
 
 const Footer = () => {

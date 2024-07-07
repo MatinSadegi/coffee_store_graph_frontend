@@ -4,7 +4,7 @@ import product from "@/public/images/earlybird-coffee-mSjTAV7JuV4-unsplash.jpg";
 import basket from "@/public/icons/basket-svgrepo-com.svg";
 import localFont from 'next/font/local';
 
-const BNazanin = localFont({ src: "../../public/fonts/B-NAZANIN.ttf" });
+const BNazanin = localFont({ src: "../public/fonts/B-NAZANIN.ttf" });
  
 
 const FeaturedProduct = () => {

@@ -5,7 +5,7 @@ import AddToCart from "@/src/components/AddToCart";
 import { numberWithCommas } from "@/src/utils/numberWithCommas";
 import localFont from "next/font/local";
 
-const BNazanin = localFont({ src: "../../../public/fonts/B-NAZANIN.ttf" });
+const BNazanin = localFont({ src: "../../public/fonts/B-NAZANIN.ttf" });
  
 const Product = async ({ params }: { params: { slug: string } }) => {
   const slug = params.slug;

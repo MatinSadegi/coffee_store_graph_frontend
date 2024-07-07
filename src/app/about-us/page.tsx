@@ -10,7 +10,7 @@ import img3 from '@/public/images/Coffee-Package-Mockup-PSD-aa.jpg'
 import img4 from '@/public/images/lex-sirikiat-J-4ozdP9EQ0-unsplash.jpg';
 import localFont from "next/font/local";
 
-const BNazanin = localFont({ src: "../../../public/fonts/B-NAZANIN.ttf" });
+const BNazanin = localFont({ src: "../../public/fonts/B-NAZANIN.ttf" });
 
 const AboutUs = () => {
   return (
