@@ -5,7 +5,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "localhost"
+        hostname: "coffee-store-graph-backend.onrender.com",
       },
     ],
   },
