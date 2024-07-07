@@ -39,7 +39,7 @@
 
 @font-face {
   font-family: 'BNazanin';
-  src: url('../../public/fonts/B-NAZANIN.ttf') format('truetype');
+  src: url('../../public/fonts/B-NAZANIN.ttf');
   font-weight: normal;
     font-style: normal;
 }

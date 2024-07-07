@@ -3,13 +3,16 @@ import Image from "next/image";
 import { getProductBySlug } from "@/src/services/productServices";
 import AddToCart from "@/src/components/AddToCart";
 import { numberWithCommas } from "@/src/utils/numberWithCommas";
+import localFont from "next/font/local";
 
+const BNazanin = localFont({ src: "../../../public/fonts/B-NAZANIN.ttf" });
+ 
 const Product = async ({ params }: { params: { slug: string } }) => {
   const slug = params.slug;
   const productDetails = await getProductBySlug(slug);
   const { title, price, description, category, image, _id, inStock } =
     productDetails;
-  return (
+  return ( 
     <div className=" max-w-[1300px] px-8  mx-auto pt-44">
       <div className=" w-full gap-10 flex flex-col md:flex-row md:items-center  ">
         <div className="md:w-1/2">
@@ -21,9 +24,9 @@ const Product = async ({ params }: { params: { slug: string } }) => {
           />
         </div>
         <div className="md:w-1/2 px-10 flex flex-col md:px-0 md:py-10">
-          <h5 className={` font-BNazanin font-bold `}>{title}</h5>
+          <h5 className={` ${BNazanin.className} font-bold `}>{title}</h5>
           <p
-            className={` font-BNazanin font-bold mt-5 text-3xl text-primary-600`}
+            className={` ${BNazanin.className} font-bold mt-5 text-3xl text-primary-600`}
           >
             {numberWithCommas(price)} <span>تومان</span>{" "}
           </p>

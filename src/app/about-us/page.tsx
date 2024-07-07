@@ -7,7 +7,10 @@ import aboutUsVideo from "@/videos/graph-dar.mp4";
 import poster from '@/public/images/pexels-olly-925786.jpg';
 import img2 from '@/public/images/marianne-krohn-9o2_SyExZIM-unsplash.jpg'
 import img3 from '@/public/images/Coffee-Package-Mockup-PSD-aa.jpg'
-import img4 from '@/public/images/lex-sirikiat-J-4ozdP9EQ0-unsplash.jpg'
+import img4 from '@/public/images/lex-sirikiat-J-4ozdP9EQ0-unsplash.jpg';
+import localFont from "next/font/local";
+
+const BNazanin = localFont({ src: "../../../public/fonts/B-NAZANIN.ttf" });
 
 const AboutUs = () => {
   return (
@@ -29,7 +32,7 @@ const AboutUs = () => {
             />
           </div>
           <div className=" lg:w-1/2 flex flex-col items-center text-center">
-            <h4 className={` font-BNazanin font-bold`}>
+            <h4 className={` ${BNazanin.className} font-bold`}>
               ما معتقدیم که بهترین در شهر هستیم
             </h4>
             <span className=" w-10 h-0.5 bg-primary-600 flex justify-center text-center my-5"></span>
@@ -44,11 +47,11 @@ const AboutUs = () => {
         </div>
         <div className=" mt-24 ">
           <p
-            className={` text-cente font-BNazanin font-bold text-primary-600 text-xl`}
+            className={` text-cente ${BNazanin.className} font-bold text-primary-600 text-xl`}
           >
             فلسفه ما
           </p>
-          <h4 className={` text-cente font-BNazanin font-bold `}>
+          <h4 className={` text-cente ${BNazanin.className} font-bold `}>
             قهوه هنر ، آیین و اشتیاق ماست
           </h4>
           <span className=" w-0.5 h-10 bg-primary-600 flex text-center mx-auto my-5"></span>
@@ -76,11 +79,11 @@ const AboutUs = () => {
       </div>
       <div className=" my-24 px-8">
         <p
-          className={` text-cente font-BNazanin font-bold text-primary-600 text-xl`}
+          className={` text-cente ${BNazanin.className} font-bold text-primary-600 text-xl`}
         >
           داستان ما
         </p>
-        <h4 className={` text-cente font-BNazanin font-bold `}>
+        <h4 className={` text-cente ${BNazanin.className} font-bold `}>
           قهوه هنر ، آیین و اشتیاق ماست
         </h4>
         <span className=" w-0.5 h-10 bg-primary-600 flex text-center mx-auto my-5"></span>
@@ -96,11 +99,11 @@ const AboutUs = () => {
         <Image src={img4} alt="image" className=" w-full md:w-1/2" />
         <div className="mr-14 my-14 md:my-0 flex flex-col items-center md:items-start">
           <p
-            className={` font-BNazanin font-bold text-primary-600 text-xl`}
+            className={` ${BNazanin.className} font-bold text-primary-600 text-xl`}
           >
             اهداف ما
           </p>
-          <h4 className={` font-BNazanin font-bold `}>
+          <h4 className={` ${BNazanin.className} font-bold `}>
             قهوه هنر ، آیین و اشتیاق ماست
           </h4>
           <span className=" w-10 h-0.5 bg-primary-600 flex text-center  my-5"></span>

@@ -2,6 +2,10 @@ import React from "react";
 import Image from "next/image";
 import product from "@/public/images/earlybird-coffee-mSjTAV7JuV4-unsplash.jpg";
 import basket from "@/public/icons/basket-svgrepo-com.svg";
+import localFont from 'next/font/local';
+
+const BNazanin = localFont({ src: "../../public/fonts/B-NAZANIN.ttf" });
+ 
 
 const FeaturedProduct = () => {
   return (
@@ -9,7 +13,7 @@ const FeaturedProduct = () => {
       <p className=" text-primary-600 text-center">
         انتخاب ما از قهوه ها و محصولات ویژه را بررسی کنید
       </p>
-      <h3 className={` font-BNazanin my-8`}>قهوه های ویژه گراف</h3>
+      <h3 className={` ${BNazanin.className} my-8`}>قهوه های ویژه گراف</h3>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 justify-center ">
         <div className="flex flex-col text-center cursor-pointer transition-all duration-500 group hover:-translate-y-2 relative ">
           <Image
@@ -26,7 +30,7 @@ const FeaturedProduct = () => {
             />
           </div>
           <p className="pt-3 pb-1 text-primary-600">بلند عربیکا</p>
-          <p className={` font-BNazanin text-lg`}>25.000 تومان</p>
+          <p className={` ${BNazanin.className} text-lg`}>25.000 تومان</p>
         </div>
         <div className="flex flex-col text-center cursor-pointer transition-all duration-500 group hover:-translate-y-2 relative">
           <Image
@@ -43,7 +47,7 @@ const FeaturedProduct = () => {
             />
           </div>
           <p className="pt-3 pb-1 text-primary-600">بلند عربیکا</p>
-          <p className={` font-BNazanin text-lg`}>25.000 تومان</p>
+          <p className={` ${BNazanin.className} text-lg`}>25.000 تومان</p>
         </div>
         <div className="flex flex-col text-center cursor-pointer transition-all duration-500 group hover:-translate-y-2 relative">
           <Image
@@ -60,7 +64,7 @@ const FeaturedProduct = () => {
             />
           </div>
           <p className="pt-3 pb-1 text-primary-600">بلند عربیکا</p>
-          <p className={` font-BNazanin text-lg`}>25.000 تومان</p>
+          <p className={` ${BNazanin.className} text-lg`}>25.000 تومان</p>
         </div>
       </div>
     </div>

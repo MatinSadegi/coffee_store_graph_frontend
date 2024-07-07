@@ -2,6 +2,10 @@ import React from "react";
 import Image from "next/image";
 import callIcon from "@/public/images/call.png";
 
+import localFont from "next/font/local";
+
+const BNazanin = localFont({ src: "../../../public/fonts/B-NAZANIN.ttf" });
+
 const ContactUs = () => {
   return (
     <div>
@@ -13,7 +17,7 @@ const ContactUs = () => {
       <div className=" flex justify-center max-w-[1200px] mx-auto gap-5 py-24">
         <div>
           <Image src={callIcon} alt="call" className="mx-auto" />
-          <h2 className=" font-BNazanin">تماس با ما</h2>
+          <h2 className={`${BNazanin.className}`}>تماس با ما</h2>
           <p className=" py-5">
             برای ارسال پیشنهادات و نظرات‌تان لطفا فرم زیر را پر کنید تا
             کارشناسان ما بعد از بررسی با شما ارتباط بگیرند.

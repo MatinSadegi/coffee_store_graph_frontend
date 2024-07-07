@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import localFont from "next/font/local";
+
+const BNazanin = localFont({ src: "../../public/fonts/B-NAZANIN.ttf" });
 
 interface ProductCardProps {
   title: string;
@@ -22,7 +25,7 @@ const ProductCard = ({ title, price, imageUrl, slug }: ProductCardProps) => {
       />
       <p className=" mt-3">{title}</p>
       <p
-        className={`text-primary-600 font-BNazanin text-xl font-bold mt-1`}
+        className={`text-primary-600 ${BNazanin.className}text-xl font-bold mt-1`}
       >
         {price} تومان
       </p>
