@@ -6,7 +6,7 @@ import localFont from 'next/font/local';
 
 const BNazanin = localFont({ src: "../public/fonts/B-NAZANIN.ttf" });
  
-
+ 
 const FeaturedProduct = () => {
   return (
     <div className=" flex flex-col items-center py-16 mx-auto  max-w-[1300px] px-8">
