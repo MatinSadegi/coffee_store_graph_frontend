@@ -5,7 +5,7 @@ import previousIcon from "@/public/icons/arrow-sm-left-svgrepo-com.svg";
 import Image from "next/image";
 import localFont from "next/font/local";
 
-const BNazanin = localFont({ src: "../../../public/fonts/B-NAZANIN.ttf" });
+const BNazanin = localFont({ src: "../../public/fonts/B-NAZANIN.ttf" });
 
 const cardInfo = [
   {
